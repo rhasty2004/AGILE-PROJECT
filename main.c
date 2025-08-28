@@ -5,6 +5,8 @@
 
 int main() {
     int choice;
+    printf("Welcome to the Clemson Study Buddy App!\n");
+    printf("select an option by entering the respective number:\n");
     while (1) {
         printf("\n=== Clemson Study Buddy App ===\n");
         printf("1. Create/Edit Profile\n");
