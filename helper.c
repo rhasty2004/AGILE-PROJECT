@@ -3,6 +3,8 @@
 #include <string.h>
 #include "classes.h"
 
+#define MAX_PROFILES 50
+
 typedef struct {
     char name[50];
     char major[30];
@@ -10,16 +12,42 @@ typedef struct {
     int enrolledCount;
 } Profile;
 
+Profile allProfiles[MAX_PROFILES];
+int profileCount = 0;
 Profile userProfile = {"", "", {0}, 0};
 
-/*int searchByCourse() {
-    printf("Searching by course...\n");
+int searchByCourse() {
+    if (profileCount == 0) {
+        printf("No profiles exist yet.\n");
+        return 0;
+    }
 
+    int courseNum;
+    printf("\nEnter course number to search (1-%d): ", NUM_COURSES);
+    scanf("%d", &courseNum);
 
+    printf("\nProfiles enrolled in %s (%s) Section %s:\n",
+           courses[courseNum-1].course,
+           courses[courseNum-1].title,
+           courses[courseNum-1].section);
 
-    
-    return 0;
-}*/
+    int found = 0;
+    for (int i = 0; i < profileCount; i++) {
+        for (int j = 0; j < allProfiles[i].enrolledCount; j++) {
+            if (allProfiles[i].enrolled[j] == courseNum) {
+                printf(" - %s (%s)\n", allProfiles[i].name, allProfiles[i].major);
+                found = 1;
+                break;
+            }
+        }
+    }
+
+    if (!found) {
+        printf("No classmates found in this course.\n");
+    }
+
+    return 1;
+}
 
 void createProfile() {
     int choice;
@@ -59,6 +87,7 @@ void createProfile() {
                    courses[idx].title,
                    courses[idx].section);
         }
+        allProfiles[profileCount++] = userProfile;
     } else if (choice == 2) {
         // ===== Edit Existing Profile =====
         if (strlen(userProfile.name) == 0) {
