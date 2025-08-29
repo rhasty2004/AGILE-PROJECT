@@ -4,15 +4,15 @@
 
 #define MAX_PROFILES 100
 #define MAX_COURSES 10
-#define MAX_COURSE_LEN 50
+#define MAX_COURSE_LEN 20
 #define MAX_AVAIL 10
 #define MAX_SESSIONS 100
 
-typedef struct {
+/*typedef struct {
     char name[100];
     char courses[MAX_COURSES][MAX_COURSE_LEN];
     int numCourses;
-} Profile;
+} Profile;*/
 
 typedef struct {
     char times[MAX_AVAIL][30];
@@ -30,7 +30,7 @@ typedef struct {
 Profile profiles[MAX_PROFILES];
 Availability availabilities[MAX_PROFILES];
 Session sessions[MAX_SESSIONS];
-int profileCount = 0;
+int pfpCount = 0;
 int sessionCount = 0;
 
 // Create a new profile
@@ -60,12 +60,12 @@ int sessionCount = 0;
 
 // Display all profiles
 void viewProfiles() {
-    if (profileCount == 0) {
+    if (pfpCount == 0) {
         printf("No profiles available.\n");
         return;
     }
 
-    for (int i = 0; i < profileCount; i++) {
+    for (int i = 0; i < pfpCount; i++) {
         printf("\nProfile %d:\n", i + 1);
         printf("Name: %s\n", profiles[i].name);
         printf("Courses: ");
@@ -159,7 +159,7 @@ void createSession() {
     scanf(" %[^\n]", time);
 
     int found = 0;
-    for (int i = 0; i < profileCount - 1; i++) {
+    for (int i = 0; i < pfpCount - 1; i++) {
         // Check if course matches and time overlaps
         for (int j = 0; j < profiles[i].numCourses; j++) {
             if (strcmp(profiles[i].courses[j], course) == 0) {

@@ -8,8 +8,11 @@
 int main() {
     int choice;
     loadProfileFromCSV();
+   
     printf("Welcome to the Clemson Study Buddy App!\n");
     printf("select an option by entering the respective number:\n");
+
+
     while (1) {
         printf("1. Create/Edit Profile\n");
         printf("2. Delete Profile\n");  
@@ -18,6 +21,9 @@ int main() {
         printf("5. Schedule Study Session\n");
         printf("6. Confirm/Cancel Session\n");
         printf("7. Exit\n");
+        
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
 
         switch(choice) {
             case 1: createProfile(); break;

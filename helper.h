@@ -1,3 +1,4 @@
+#include "profile.h"
 extern int profileCount;
 extern Profile allProfiles[];
 extern Profile userProfile;
