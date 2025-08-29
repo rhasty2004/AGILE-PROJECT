@@ -148,6 +148,7 @@ void createProfile() {
                 courses[idx].section);
         }
     }
+    saveProfilesToCSV();
 }
 
 void deleteProfile() {
@@ -162,4 +163,66 @@ void deleteProfile() {
     userProfile.enrolledCount = 0;
 
     printf("Profile deleted successfully.\n");
+    saveProfilesToCSV();
+}
+
+void saveProfilesToCSV() {
+    FILE *fp = fopen("userdata.csv", "w");
+    if (!fp) {
+        printf("Error opening userdata.csv for writing!\n");
+        return;
+    }
+
+    // Header row
+    fprintf(fp, "Name,Major,Courses\n");
+
+    for (int i = 0; i < profileCount; i++) {
+        fprintf(fp, "%s,%s,", allProfiles[i].name, allProfiles[i].major);
+        for (int j = 0; j < allProfiles[i].enrolledCount; j++) {
+            fprintf(fp, "%s", courses[allProfiles[i].enrolled[j] - 1].course);
+            if (j < allProfiles[i].enrolledCount - 1) {
+                fprintf(fp, "|"); // separate multiple courses with |
+            }
+        }
+        fprintf(fp, "\n");
+    }
+
+    fclose(fp);
+}
+
+void loadProfilesFromCSV() {
+    FILE *fp = fopen("userdata.csv", "r");
+    if (!fp) return;  // no file yet
+
+    char line[256];
+    fgets(line, sizeof(line), fp); // skip header
+
+    profileCount = 0;
+    while (fgets(line, sizeof(line), fp)) {
+        char *token = strtok(line, ",");
+        strcpy(allProfiles[profileCount].name, token);
+
+        token = strtok(NULL, ",");
+        strcpy(allProfiles[profileCount].major, token);
+
+        token = strtok(NULL, ",");
+        allProfiles[profileCount].enrolledCount = 0;
+        if (token) {
+            char *courseToken = strtok(token, "|");
+            while (courseToken) {
+                // match against courses[] to get course index
+                for (int i = 0; i < NUM_COURSES; i++) {
+                    if (strcmp(courseToken, courses[i].course) == 0) {
+                        allProfiles[profileCount].enrolled[allProfiles[profileCount].enrolledCount++] = courses[i].num;
+                        break;
+                    }
+                }
+                courseToken = strtok(NULL, "|");
+            }
+        }
+
+        profileCount++;
+    }
+
+    fclose(fp);
 }
