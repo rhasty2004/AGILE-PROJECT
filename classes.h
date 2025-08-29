@@ -12,4 +12,6 @@ typedef struct {
     char time[20];      // meeting time
 } Course;
 
-#endif //
+extern Course courses[NUM_COURSES];
+
+#endif // CLASSES_H
