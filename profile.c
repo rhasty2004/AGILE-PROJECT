@@ -1,6 +1,19 @@
 #include <stdio.h>
 #include <string.h>
 
+#define MAX_PROFILES 100
+#define MAX_COURSES 10
+#define MAX_COURSE_LEN 50
+
+typedef struct {
+    char name[100];
+    char courses[MAX_COURSES][MAX_COURSE_LEN];
+    int numCourses;
+} Profile;
+
+Profile profiles[MAX_PROFILES];
+int profileCount = 0;
+
 // Create a new profile
 void createProfile() {
     if (profileCount >= MAX_PROFILES) {
@@ -65,4 +78,17 @@ void searchByCourse() {
     if (!found) {
         printf("No students found for course %s\n", searchCourse);
     }
+}
+
+// Add stubs for new features
+void manageAvailability() {
+    
+}
+
+void createSession() {
+    
+}
+
+void confirmSession() {
+    
 }

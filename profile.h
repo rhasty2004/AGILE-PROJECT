@@ -20,5 +20,8 @@ void createProfile();
 void viewProfiles();
 void searchByCourse();
 void runTests();
+void manageAvailability();
+void createSession();
+void confirmSession();
 
 #endif
