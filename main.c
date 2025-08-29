@@ -3,6 +3,7 @@
 #include <string.h>
 #include "profile.h"
 
+
 int main() {
     int choice;
     printf("Welcome to the Clemson Study Buddy App!\n");

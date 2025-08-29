@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 #define MAX_PROFILES 100
 #define MAX_COURSES 10
@@ -81,7 +80,7 @@ void searchByCourse() {
 }
 
 // Add stubs for new features
-void manageAvailability() {
+/*void manageAvailability() {
     
 }
 
@@ -91,4 +90,4 @@ void createSession() {
 
 void confirmSession() {
     
-}
+}*/
