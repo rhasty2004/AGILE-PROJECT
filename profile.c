@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include "helper.h"
 
 #define MAX_PROFILES 100
 #define MAX_COURSES 10
@@ -76,7 +77,7 @@ void viewProfiles() {
 }
 
 // Search for classmates by course
-void searchByCourse() {
+/*void searchByCourse() {
     char searchCourse[MAX_COURSE_LEN];
     int found = 0;
 
@@ -96,10 +97,10 @@ void searchByCourse() {
     if (!found) {
         printf("No students found for course %s\n", searchCourse);
     }
-}
+}*/
 
 // Add or remove availability for the current user (last profile)
-void manageAvailability() {
+/*void manageAvailability() {
     if (profileCount == 0) {
         printf("No profile found. Create a profile first.\n");
         return;
@@ -140,7 +141,7 @@ void manageAvailability() {
     } else {
         printf("Invalid choice.\n");
     }
-}
+}*/
 
 // Suggest matches for study sessions
 void createSession() {

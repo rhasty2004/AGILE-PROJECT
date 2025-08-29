@@ -7,6 +7,7 @@ void createProfile(void);
 void deleteProfile(void);
 void saveProfileToCSV(void);
 void loadProfileFromCSV(void);
+void manageAvailability(void);
 
 
 

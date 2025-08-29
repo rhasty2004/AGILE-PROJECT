@@ -19,7 +19,7 @@ extern int profileCount;
 //void createProfile();
 void viewProfiles();
 void runTests();
-void manageAvailability();
+//void manageAvailability();
 void createSession();
 void confirmSession();
 void deleteProfile();
