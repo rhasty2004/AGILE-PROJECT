@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "classes.c"
+#include "classes.h"
 
 typedef struct {
     char name[50];
