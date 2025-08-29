@@ -150,7 +150,7 @@ void createProfile() {
                 courses[idx].section);
         }
     }
-    saveProfilesToCSV();
+    saveProfileToCSV();
 }
 
 void deleteProfile() {
@@ -165,7 +165,7 @@ void deleteProfile() {
     userProfile.enrolledCount = 0;
 
     printf("Profile deleted successfully.\n");
-    saveProfilesToCSV();
+    saveProfileToCSV();
 }
 
 void saveProfileToCSV() {

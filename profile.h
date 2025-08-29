@@ -18,7 +18,6 @@ extern int profileCount;
 // Function declarations
 //void createProfile();
 void viewProfiles();
-void searchByCourse();
 void runTests();
 void manageAvailability();
 void createSession();
