@@ -275,10 +275,9 @@ void manageAvailability() {
                 continue;
             }
             printf("Enter availability (e.g., MWF 10:00-11:00): ");
-            getchar(); // clear newline
+            getchar(); 
             fgets(userProfile.availability[userProfile.availCount], sizeof(userProfile.availability[userProfile.availCount]), stdin);
 
-            // remove newline from fgets
             size_t len = strlen(userProfile.availability[userProfile.availCount]);
             if (len > 0 && userProfile.availability[userProfile.availCount][len-1] == '\n')
                 userProfile.availability[userProfile.availCount][len-1] = '\0';
@@ -311,6 +310,5 @@ void manageAvailability() {
             printf("Invalid choice.\n");
         }
     }
-
-    saveProfileToCSV(); // keep it consistent with CSV storage
+    saveProfileToCSV();
 }
