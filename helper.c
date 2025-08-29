@@ -12,14 +12,14 @@ typedef struct {
 
 Profile userProfile = {"", "", {0}, 0};
 
-int searchByCourse() {
+/*int searchByCourse() {
     printf("Searching by course...\n");
 
 
 
     
     return 0;
-}
+}*/
 
 void createProfile() {
     int choice;

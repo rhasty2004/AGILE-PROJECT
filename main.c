@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include "profile.h"
-
+#include "helper.h"
+#include "classes.h"
 
 int main() {
     int choice;

@@ -16,7 +16,7 @@ extern Profile profiles[MAX_PROFILES];
 extern int profileCount;
 
 // Function declarations
-void createProfile();
+//void createProfile();
 void viewProfiles();
 void searchByCourse();
 void runTests();

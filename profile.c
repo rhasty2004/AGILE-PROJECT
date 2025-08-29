@@ -33,7 +33,7 @@ int profileCount = 0;
 int sessionCount = 0;
 
 // Create a new profile
-void createProfile() {
+/*void createProfile() {
     if (profileCount >= MAX_PROFILES) {
         printf("Profile limit reached.\n");
         return;
@@ -55,7 +55,7 @@ void createProfile() {
 
     profiles[profileCount++] = p;
     printf("Profile created successfully!\n");
-}
+}*/
 
 // Display all profiles
 void viewProfiles() {

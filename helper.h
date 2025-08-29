@@ -1,9 +1,8 @@
 
 
-int searchByCourse();
-int manageAvailability();
-int scheduleSession();
-int confirmSession();
+//int searchByCourse();
+void createProfile();
+void deleteProfile();
 
 
 
