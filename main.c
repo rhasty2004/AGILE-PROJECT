@@ -7,7 +7,7 @@
 
 int main() {
     int choice;
-    loadProfilesFromCSV();
+    loadProfileFromCSV();
     printf("Welcome to the Clemson Study Buddy App!\n");
     printf("select an option by entering the respective number:\n");
     while (1) {

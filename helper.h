@@ -5,8 +5,8 @@ extern Profile userProfile;
 int searchByCourse(void);
 void createProfile(void);
 void deleteProfile(void);
-void saveProfilesToCSV(void);
-void loadProfilesFromCSV(void);
+void saveProfileToCSV(void);
+void loadProfileFromCSV(void);
 
 
 
