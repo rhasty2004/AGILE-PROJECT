@@ -120,3 +120,17 @@ void createProfile() {
         }
     }
 }
+
+void deleteProfile() {
+    if (strlen(userProfile.name) == 0) {
+        printf("No profile exists to delete.\n");
+        return;
+    }
+
+    // Clear out profile data
+    userProfile.name[0] = '\0';
+    userProfile.major[0] = '\0';
+    userProfile.enrolledCount = 0;
+
+    printf("Profile deleted successfully.\n");
+}

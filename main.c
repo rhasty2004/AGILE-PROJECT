@@ -9,23 +9,23 @@ int main() {
     printf("Welcome to the Clemson Study Buddy App!\n");
     printf("select an option by entering the respective number:\n");
     while (1) {
-        printf("\n=== Clemson Study Buddy App ===\n");
         printf("1. Create/Edit Profile\n");
-        printf("2. Search Classmates by Course\n");
-        printf("3. Manage Availability\n");
-        printf("4. Schedule Study Session\n");
-        printf("5. Confirm/Cancel Session\n");
-        printf("6. Exit\n");
-        scanf("%d", &choice);
+        printf("2. Delete Profile\n");  
+        printf("3. Search Classmates by Course\n");
+        printf("4. Manage Availability\n");
+        printf("5. Schedule Study Session\n");
+        printf("6. Confirm/Cancel Session\n");
+        printf("7. Exit\n");
 
         switch(choice) {
             case 1: createProfile(); break;
-            case 2: searchByCourse(); break;
-            case 3: manageAvailability(); break;
-            case 4: createSession(); break;
-            case 5: confirmSession(); break;
-            case 6: return 0;
+            case 2: deleteProfile(); break;   
+            case 3: searchByCourse(); break;
+            case 4: manageAvailability(); break;
+            case 5: createSession(); break;
+            case 6: confirmSession(); break;
+            case 7: return 0;
             default: printf("Invalid choice.\n");
-        }
+}
     }
 }

@@ -23,5 +23,6 @@ void runTests();
 void manageAvailability();
 void createSession();
 void confirmSession();
+void deleteProfile();
 
 #endif
