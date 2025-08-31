@@ -16,10 +16,9 @@ extern Profile profiles[MAX_PROFILES];
 extern int profileCount;
 
 // Function declarations
-//void createProfile();
+
 void viewProfiles();
 void runTests();
-//void manageAvailability();
 void createSession();
 void confirmSession();
 void deleteProfile();

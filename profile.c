@@ -8,11 +8,7 @@
 #define MAX_AVAIL 10
 #define MAX_SESSIONS 100
 
-/*typedef struct {
-    char name[100];
-    char courses[MAX_COURSES][MAX_COURSE_LEN];
-    int numCourses;
-} Profile;*/
+
 
 typedef struct {
     char times[MAX_AVAIL][30];
@@ -33,30 +29,6 @@ Session sessions[MAX_SESSIONS];
 int pfpCount = 0;
 int sessionCount = 0;
 
-// Create a new profile
-/*void createProfile() {
-    if (profileCount >= MAX_PROFILES) {
-        printf("Profile limit reached.\n");
-        return;
-    }
-
-    Profile p;
-    printf("Enter your name: ");
-    scanf(" %[^\n]", p.name);
-
-    printf("How many courses are you enrolled in (max %d)? ", MAX_COURSES);
-    scanf("%d", &p.numCourses);
-
-    if (p.numCourses > MAX_COURSES) p.numCourses = MAX_COURSES;
-
-    for (int i = 0; i < p.numCourses; i++) {
-        printf("Enter course %d: ", i + 1);
-        scanf(" %s", p.courses[i]);
-    }
-
-    profiles[profileCount++] = p;
-    printf("Profile created successfully!\n");
-}*/
 
 // Display all profiles
 void viewProfiles() {
@@ -76,72 +48,7 @@ void viewProfiles() {
     }
 }
 
-// Search for classmates by course
-/*void searchByCourse() {
-    char searchCourse[MAX_COURSE_LEN];
-    int found = 0;
 
-    printf("Enter course to search: ");
-    scanf(" %s", searchCourse);
-
-    for (int i = 0; i < profileCount; i++) {
-        for (int j = 0; j < profiles[i].numCourses; j++) {
-            if (strcmp(profiles[i].courses[j], searchCourse) == 0) {
-                printf("Match found: %s\n", profiles[i].name);
-                found = 1;
-                break;
-            }
-        }
-    }
-
-    if (!found) {
-        printf("No students found for course %s\n", searchCourse);
-    }
-}*/
-
-// Add or remove availability for the current user (last profile)
-/*void manageAvailability() {
-    if (profileCount == 0) {
-        printf("No profile found. Create a profile first.\n");
-        return;
-    }
-    int idx = profileCount - 1;
-    int choice;
-    printf("Manage Availability for %s\n", profiles[idx].name);
-    printf("1. Add availability\n2. Remove availability\n3. View availability\n");
-    scanf("%d", &choice);
-
-    if (choice == 1) {
-        if (availabilities[idx].availCount >= MAX_AVAIL) {
-            printf("Maximum availability slots reached.\n");
-            return;
-        }
-        printf("Enter available time (e.g., MWF 10:00AM): ");
-        scanf(" %[^\n]", availabilities[idx].times[availabilities[idx].availCount]);
-        availabilities[idx].availCount++;
-        printf("Availability added.\n");
-    } else if (choice == 2) {
-        printf("Enter slot number to remove (1-%d): ", availabilities[idx].availCount);
-        int slot;
-        scanf("%d", &slot);
-        if (slot < 1 || slot > availabilities[idx].availCount) {
-            printf("Invalid slot.\n");
-            return;
-        }
-        for (int i = slot - 1; i < availabilities[idx].availCount - 1; i++) {
-            strcpy(availabilities[idx].times[i], availabilities[idx].times[i+1]);
-        }
-        availabilities[idx].availCount--;
-        printf("Availability removed.\n");
-    } else if (choice == 3) {
-        printf("Your availability:\n");
-        for (int i = 0; i < availabilities[idx].availCount; i++) {
-            printf("%d. %s\n", i+1, availabilities[idx].times[i]);
-        }
-    } else {
-        printf("Invalid choice.\n");
-    }
-}*/
 
 // Suggest matches for study sessions
 void createSession() {
