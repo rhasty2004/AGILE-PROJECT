@@ -1,9 +1,87 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.3">
   <diagram name="Page-1" id="gFs722bcBnXR66HRwjR4">
-    <mxGraphModel>
+    <mxGraphModel dx="976" dy="664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="y2MfsEo1iqTS_oSfdTHc-1" value="Clemson Ticketing System" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="180" width="330" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="y2MfsEo1iqTS_oSfdTHc-2" value="Create Account" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="y2MfsEo1iqTS_oSfdTHc-1">
+          <mxGeometry y="30" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="y2MfsEo1iqTS_oSfdTHc-7" value="Search Events/Filter Events -&amp;gt; View event Details" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="y2MfsEo1iqTS_oSfdTHc-1">
+          <mxGeometry y="60" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="y2MfsEo1iqTS_oSfdTHc-3" value="Buy Tickets" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="y2MfsEo1iqTS_oSfdTHc-1">
+          <mxGeometry y="90" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="y2MfsEo1iqTS_oSfdTHc-8" value="View Purchased Tickets" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="y2MfsEo1iqTS_oSfdTHc-1">
+          <mxGeometry y="120" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="y2MfsEo1iqTS_oSfdTHc-18" value="Checkout -&amp;gt; apply any necessary discounts" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="y2MfsEo1iqTS_oSfdTHc-1">
+          <mxGeometry y="150" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="y2MfsEo1iqTS_oSfdTHc-4" value="Manage Events -&amp;gt; create events, delete, etc." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="y2MfsEo1iqTS_oSfdTHc-1">
+          <mxGeometry y="180" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="y2MfsEo1iqTS_oSfdTHc-14" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="y2MfsEo1iqTS_oSfdTHc-1" source="y2MfsEo1iqTS_oSfdTHc-8" target="y2MfsEo1iqTS_oSfdTHc-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-90" y="130" as="sourcePoint" />
+            <mxPoint x="-90" y="100" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-200" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y2MfsEo1iqTS_oSfdTHc-5" value="Students/Guests" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y2MfsEo1iqTS_oSfdTHc-6" value="Event Organizer (e.g. University)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="375" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y2MfsEo1iqTS_oSfdTHc-9" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="y2MfsEo1iqTS_oSfdTHc-5" target="y2MfsEo1iqTS_oSfdTHc-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="250" as="sourcePoint" />
+            <mxPoint x="240" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y2MfsEo1iqTS_oSfdTHc-12" value="" style="endArrow=none;html=1;rounded=0;entryX=0.176;entryY=1.133;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="y2MfsEo1iqTS_oSfdTHc-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="440" as="sourcePoint" />
+            <mxPoint x="480" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y2MfsEo1iqTS_oSfdTHc-13" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="y2MfsEo1iqTS_oSfdTHc-5" target="y2MfsEo1iqTS_oSfdTHc-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="310" as="sourcePoint" />
+            <mxPoint x="230" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y2MfsEo1iqTS_oSfdTHc-15" value="New Customer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="130" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="y2MfsEo1iqTS_oSfdTHc-17" value="" style="endArrow=none;html=1;rounded=0;entryX=0.003;entryY=0.3;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="y2MfsEo1iqTS_oSfdTHc-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="160" as="sourcePoint" />
+            <mxPoint x="350" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y2MfsEo1iqTS_oSfdTHc-19" value="Payment Service (e.g. Paypal)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y2MfsEo1iqTS_oSfdTHc-20" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="y2MfsEo1iqTS_oSfdTHc-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="390" as="sourcePoint" />
+            <mxPoint x="260" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y2MfsEo1iqTS_oSfdTHc-21" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="y2MfsEo1iqTS_oSfdTHc-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="260" as="sourcePoint" />
+            <mxPoint x="350" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
